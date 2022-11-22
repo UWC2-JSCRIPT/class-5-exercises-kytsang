@@ -29,9 +29,6 @@ add.addEventListener('click', (e)=> {
   
   const todayList = document.getElementsByClassName("today-list")[0];
   todayList.appendChild(aElement);
- 
- 
- // addListItem(e);
 })
 
 
