@@ -11,3 +11,5 @@ td.forEach((cell)=> cell.addEventListener('click', (e)=>{
     cell.innerText= x + ','+ y ;
 })) 
 
+
+

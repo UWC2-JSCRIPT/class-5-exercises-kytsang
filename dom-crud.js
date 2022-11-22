@@ -32,3 +32,4 @@ thirdLi.setAttribute('class', 'highlight');
 
 const para = document.getElementsByTagName('p');
 para.remove();
+

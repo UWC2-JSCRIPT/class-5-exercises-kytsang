@@ -17,3 +17,5 @@ const p = document.querySelector('p');
 const answer3= p.parentElement.children[1].children[2];
 console.log(answer3);
 
+
+

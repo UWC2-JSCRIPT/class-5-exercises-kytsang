@@ -16,3 +16,4 @@ sunEls.forEach((el) => el.style.color = 'orange')
 
 const cloud = document.querySelector('.sun');
 cloud.className='cloudy';
+
