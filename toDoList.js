@@ -23,28 +23,20 @@ del.addEventListener('click', ()=> {
 const add = document.getElementsByClassName('add-item')[0];
 
 add.addEventListener('click', (e)=> {
- 
-  const aElement = document.createElement('li');
-  aElement.innerText=addListItem.text;
-  
-  const todayList = document.getElementsByClassName("today-list")[0];
-  todayList.appendChild(aElement);
+  addListItem(add,e);
 })
 
 
-
-const addListItem = function(e) {
+const addListItem = function(button, e) {
   e.preventDefault();
-  const input = this.parentNode.getElementsByTagName('input')[0];
+  const input = button.parentNode.getElementsByTagName('input')[0];  
   const text = input.value; // use this text to create a new <li>
-
-  // Finish function here
-  //const liElement = document.createElement('li');
-  //liElement.innerText= text;
-
- // const todayList = document.getElementsByClassName("today-list")[0];
-  //todayList.appendChild(liElement); 
+  const aElement = document.createElement('li');
+  aElement.innerText=text;
+  const todayList = document.getElementsByClassName("today-list")[0];
+  todayList.appendChild(aElement);
 };
+
 
 
 

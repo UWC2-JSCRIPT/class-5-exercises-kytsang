@@ -16,9 +16,12 @@ document.getElementById("more-info").addEventListener('click',(e)=>{
 // Should *not* alert "meow"
 
 document.getElementById('dog').addEventListener('click', (e)=> {
-  e.preventDefault();
+  e.stopPropagation();
   alert('Bow wow!');
-},false)
+})
 
-//sally can't get this third one right
+
+
+
+
 
