@@ -35,8 +35,12 @@ const addListItem = function(button, e) {
   aElement.innerText=text;
   const todayList = document.getElementsByClassName("today-list")[0];
   todayList.appendChild(aElement);
-};
+  const deleteButton =document.createElement('a');
+  aElement.appendChild(deleteButton);
+  deleteButton.innerText= 'Delete';
+  deleteButton.className='delete';
 
+};
 
 
 

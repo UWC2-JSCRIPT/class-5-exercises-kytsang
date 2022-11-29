@@ -30,6 +30,6 @@ thirdLi.setAttribute('class', 'highlight');
 // Remove (delete) the last paragraph
 // (starts with "Available for purchase now…")
 
-const para = document.getElementsByTagName('p');
+const para = document.getElementsByTagName("p");
 para.remove();
 
